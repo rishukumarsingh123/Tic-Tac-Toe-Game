@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+HU:wght@100..400&family=Playwrite+NZ+Basic:wght@100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #18181B;
+}
+nav{
+    background-color: rgb(62, 36, 87);
+    color: white;
+    height: 60px;
+    font-size: 27px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    font-family: "Montserrat", sans-serif;
+}
+nav>ul{
+    list-style: none;
+}
+.gamecontainer{
+    display: flex;
+    flex-direction: column;
+    margin-top:35px;
+    gap: 20px;
+    align-items: center;
+}
+.container{
+    display: grid;
+    grid-template-rows: repeat(3,10vw);
+    grid-template-columns: repeat(3,10vw);
+    font-family: "Montserrat", sans-serif;
+}
+.box{
+    border: 2px solid #F3F4F6;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    background-color: rgb(238, 165, 238);
+}
+.gameinfo{
+    padding:0 34px;
+    font-family: "Montserrat", sans-serif;
+}
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bd-0{
+    border-bottom: 0;
+}
+.info{
+    font-family: "Montserrat", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    color: #F3F4F6;
+}
+h1{
+    background-color: #f3f4f6;
+    border-radius: 6px;
+    padding: 5px;
+}
+#reset{
+    height: 31px;
+    width: 67px;
+    cursor: pointer;
+    background-color: #f3f4f6;
+    margin: 0 23px;
+    border-radius: 6px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+.result{
+    display: flex;
+    margin: 10px;
+    gap: 30px;
+}
+
+@media screen and (max-width: 600px) {
+
+    nav{
+        font-size: 20px;
+        height: 50px;
+        padding: 0 10px;
+    }
+
+    .gamecontainer{
+        margin-top: 20px;
+        gap: 15px;
+    }
+
+    .container{
+        grid-template-rows: repeat(3,24vw);
+        grid-template-columns: repeat(3,24vw);
+    }
+
+    .box{
+        font-size: 14vw;
+    }
+
+    .gameinfo{
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    .info{
+        font-size: 18px;
+    }
+
+    h1{
+        font-size: 20px;
+        padding: 8px;
+    }
+
+    #reset{
+        width: 90px;
+        height: 38px;
+        font-size: 16px;
+        margin: 10px 0;
+    }
+
+    .result{
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+    }
+}
